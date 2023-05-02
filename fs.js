@@ -13,14 +13,23 @@ fs.writeFile("file", context_1, function(error){
     }
 })
 
-var context;
+var context = undefined;
 
 fs.readFile("file" , function(error, data){
     if(error){
         console.log(error);
     }else{
         console.log("read finished.");
+        console.log(data);
         console.log(data.toString());
+        context = data ;
     }
 })
 
+setTimeout(function(){
+    console.log(context);
+},100)
+
+setTimeout(()=>{
+    console.log(context.toString());
+},200)
