@@ -1,4 +1,4 @@
-//promise函数异步执行
+//函数内定义promise 使得函数异步执行 
 let A = 2;
 function functionA(){
     return new Promise((resolve,reject) => {//Promise中有一个函数，并向里面传两个参数
