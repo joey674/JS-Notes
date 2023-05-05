@@ -23,19 +23,15 @@ setTimeout(() => {
 
 
 function openPort(port){
-    return new Promise((resolve) => {
         port.open((err) => {
             if (err) {
                 console.log(err.message)
                 resume(port)
-                resolve()
             }else{
                 console.log('open succcess.')
                 port0Status = 'open'
-                resolve()
             }
         })
-    })
 }
 function resume(port) {
     setTimeout(() => { openPort(port) }, 1000)
