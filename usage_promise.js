@@ -1,4 +1,4 @@
-//函数内定义promise 使得函数异步执行 
+//promise是一个异步函数 他在编程中的真正有用的意义是：他会返回一个promise对象，这个promise对象有两个状态：resolve和reject。当promise函数内部的状态改变时，他会更新promise对象的状态，这样就可以写相对应的应对函数。
 
 let B = 2;
 function functionB(){
