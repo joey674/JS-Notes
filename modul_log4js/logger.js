@@ -8,7 +8,7 @@ log4js.configure({
         },
         file: { 
             type: 'file',
-            filename: 'Xservice_log' 
+            filename: 'serviceLog' 
             //这里还可以接着添加file的信息
         }
     },
